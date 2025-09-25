@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;   /* allows images to wrap on next line */
+      gap: 10px;         /* spacing between images */
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover; /* crop nicely without stretching */
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1); /* zoom effect */
+      border-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<h2>My Image Gallery</h2>
+
+<div class="gallery">
+  <img src="image1.jpeg" alt="Image 1">
+  <img src="image2.jpeg" alt="Image 2">
+  <img src="image3.jpeg" alt="Image 3">
+</div>
+
+</body>
+</html>
